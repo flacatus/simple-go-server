@@ -7,7 +7,7 @@ RUN go build -o myserver server.go
 
 FROM registry.access.redhat.com/ubi8/ubi-minimal
 
-LABEL MAINTAINER "Praveen Kumar <prkumar@redhat.com>"
+LABEL MAINTAINER "Flavius Lacatusu <flacatus@redhat.com>"
 
 COPY --from=builder /workspace/myserver /usr/bin/myserver
 
